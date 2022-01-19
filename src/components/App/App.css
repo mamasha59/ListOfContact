@@ -1,0 +1,27 @@
+.page{
+    max-width: 980px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 0;
+    border:1px solid grey ;
+}
+.page__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page__block-users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    list-style: decimal-leading-zero;
+}
+.page__error{
+    color: rgb(246, 250, 11);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}

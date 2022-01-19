@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.header__titile{
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 0;
+}
+.header__profile{
+    display: flex;
+    align-items: center;
+    color: rgb(239, 243, 10);
+    font-weight: bold;
+}
+.header__block-utils{
+    display: flex;
+    align-items: center;
+}
+.header__exit{
+    padding: 0;
+    background-color: inherit;
+    color: #ff6767;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    border: none;
+}

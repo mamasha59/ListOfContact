@@ -1,0 +1,53 @@
+.phone-list{
+    width: 50%;
+}
+.phone-list__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+    border: 1px solid #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+.phone-list__user-block{
+    width: 120px;
+    padding: 0;
+    margin: 0 5px 0 0;
+    border-right: 1px solid red;
+}
+.phone-list__name{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.phone-input-block{
+    background-color: inherit;
+    border: none;
+}
+.phone-list__number{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(248, 150, 3);
+    border-right: 1px solid red;
+    padding: 0 30px 0 0;
+    width: 100px;
+}
+.phone-align{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.phone-list__edit {
+ margin: 0 0 5px 0;
+}
+.phone__form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}

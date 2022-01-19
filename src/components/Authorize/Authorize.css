@@ -1,0 +1,45 @@
+.login__signin {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__title {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 45px 0;
+  color: #f9c508;
+}
+.login__title-input {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+}
+.login__add-phone {
+  width: 100%;
+  padding: 20px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #5e5cd1;
+  color: #000;
+  border: ridge;
+}
+.login__add-phone::placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+.login__enter {
+  padding: 10px 5px;
+  width: 100px;
+  margin: 10px 0 0 0;
+  background-color: #f9c508;
+  border-radius: 5px;
+  font-size: 15px;
+  color: mediumblue;
+  cursor: pointer;
+}
