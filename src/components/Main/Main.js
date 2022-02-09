@@ -1,30 +1,31 @@
 import React from 'react';
-import Input from '../Input/Input';
-import Pnones from '../Pnones/Pnones';
+import User from '../User/User';
 import Header from '../Header/Header';
+import Preloader from '../Preloader/Preloader';
 
-function Main({handleDelete,addPhone,contacts,findPhone,profile}) {
+function Main({users,profile,loggedIn,handleFindValue, valueInput}) {
 
+  const setFilter = () => { // --- функция поиска контактов
+    const filtredUsers = users.filter(user =>  user.address.city.toLowerCase().includes(valueInput.toLowerCase())); // ---фильтрация по городу
+    // console.log(filtredUsersByName)
+     return (loggedIn ? <Preloader/> : (Object.keys(filtredUsers)).map((user, i) => (
+     
+       <User
+              key={i}
+              userName={filtredUsers[user].name}
+              userAdress={filtredUsers[user].address.city}
+              userCompany={filtredUsers[user].company.name}
+              user = {filtredUsers[user]}
+            />
+            ) 
+            ))
+   };
+   
     return (
-        <>
-        <Header findPhone={findPhone} profile={profile}/>
+      <>
+        <Header findPhone={handleFindValue} profile={profile}/>
         <div className='page__container'>
-        <Input addPhone={addPhone}/>
-        <ul className='page__block-users'>
-        {contacts.length === 0 ? <div className='page__error'>Пока ничего нет :( Добавьте контакт!</div> :
-            contacts.map((contact) => {
-                        return(
-                            <Pnones
-                            contact={contact.name} 
-                            number={contact.phone}
-                            key={contact.id}
-                            handleDelete={handleDelete}
-                            id={contact.id}
-                            />)
-                    })          
-        }
-            
-        </ul>
+          <div className='page__block-users'>{setFilter()}</div>
         </div>
       </>
      );

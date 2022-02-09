@@ -1,0 +1,47 @@
+.user{
+    display: flex;
+    flex: 1 0 24%;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    padding: 10px;
+    max-width: 291px;
+    box-shadow: 0px 0px 5px #0e0e10;
+    background-color: #5a58dfcf;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &__name{
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+        color: #f1aa0b;
+    }
+
+    &__adress{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        color: #f3e105;
+    }
+    &__company{
+        color: #111212;
+        font-size: 15px;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    &__button{
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: lightblue;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+            opacity: .6;
+        }
+    }
+}

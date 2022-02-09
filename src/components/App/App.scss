@@ -1,0 +1,26 @@
+.page{
+    max-width: 980px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 0;
+    border:1px solid grey ;
+
+    &__container{
+    padding: 10px;
+    }
+
+    &__block-users{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+    }
+
+    &__error{
+        color: rgb(246, 250, 11);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+}
